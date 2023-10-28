@@ -48,3 +48,39 @@ a {
 a:hover {
     color: blue;
 }
+
+
+/* Form: */
+.myForm {
+    margin-top: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    display: grid;
+    grid-template-columns: [labels] 0.4fr [controls] 1fr;
+    grid-auto-flow: row;
+}
+
+.myForm>label {
+    justify-content: center;
+    grid-column: labels;
+    grid-row: auto;
+    padding-top: 1vh;
+    font-size: 3.3vh;
+}
+
+.myForm>input,
+.myForm>textarea {
+    grid-column: controls;
+    grid-row: auto;
+    padding: 1em;
+    border: 1px black solid;
+}
+
+.btn {
+    grid-column: controls;
+}
+
+.btn>input {
+    width: 25%;
+    margin: 5px;
+}
